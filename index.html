@@ -13,7 +13,7 @@ document.getElementById("uploadForm").addEventListener("submit", async (event) =
   const formData = new FormData();
   formData.append("file", fileInput.files[0]);
 
-  const response = await fetch("https://media.craz.top/", {
+  const response = await fetch("https://media.craz.top/upload", {  // <-- Correct endpoint
     method: "POST",
     body: formData
   });
